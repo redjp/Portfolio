@@ -3,7 +3,8 @@
 __pycache__
 myport
 db.sqlite3
-staticfiles
+static
 images
 .DS_Store
+local_settings.py
 .vscode
