@@ -1,0 +1,63 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<section id="portfolio">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-8 col-md-offset-2">
+
+                <div class="title-content">
+
+                    <h3 class="section-title">制作物一覧</h3>
+
+                </div>
+
+            </div>
+
+        </div> <!-- /.row -->
+
+        <div class="row">
+
+            <nav id="portfolio-navigation" class="navbar">
+
+                <!-- Section title -->
+                <h1 class="sr-only">Portfolio navigation</h1>
+
+                <ul class="nav navbar-nav">
+                    <li><button class="filter mixitup-control-active" type="button" data-mixitup-control data-filter="all">All</button></li>
+                    <li><button class="filter" type="button" data-mixitup-control data-filter=".web_apps">Web Apps</button></li>
+                    <li><button class="filter" type="button" data-mixitup-control data-filter=".win_apps">Win Apps</button></li>
+                    <li><button class="filter" type="button" data-mixitup-control data-filter=".games">Games</button></li>
+                    <li><button class="filter" type="button" data-mixitup-control data-filter=".spreadsheets">Spreadsheets</button></li>
+                </ul>
+
+            </nav> <!-- /#portfolio-navigation -->
+
+        </div> <!-- /.row -->
+
+        <div class="row">
+
+            <div id="portfolio-grid" class="portfolio-grid">
+
+                {% for post in posts %}
+                <figure class="grid-item mix all {{ post.tag }}">
+                    <a href="{% url 'post_detail' pk=post.pk %}"><img src="{{ post.image.url }}" alt="{{ post.title }}"></a>
+                    <h4>{{ post.title }}</h4>
+                </figure>
+                {% endfor %}
+
+                <figure class="gap"></figure>
+
+            </div>
+
+        </div> <!-- /.row -->
+
+        {% comment %} <a href="#" class="btn btn-default yellow-white">Show More</a> {% endcomment %}
+
+    </div> <!-- /.container -->
+
+</section>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<section id="portfolio">
+
+    <div class="container">
+
+        <div class="video-section">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                    	<div class="img-container">
+
+                            <img src="{{ post.image.url }}" alt="{{ post.title }}">
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <h4>{{ post.title }}</h4>
+
+                        <p><i><a href="{{ post.url }}">homepage</a></i></p>
+
+                        <div class="video-description">
+
+                            {{ post.text | safe}}
+
+                        </div>
+
+                        <a href="{% url 'post_list' %}" class="btn btn-default white-blue pull-center">戻る</a>
+
+                    </div>
+
+                </div> <!-- /.row -->
+
+            </div> <!-- /.container -->
+
+        </div> <!-- /.video-section -->
+
+    </div>
+
+</section>
+{% endblock %}

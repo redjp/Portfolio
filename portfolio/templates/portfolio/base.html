@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Redjp's Portfolio">
+        <meta name="author" content="redjp"/>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,600i" rel="stylesheet">
+        {% comment %} <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=cyrillic,japanese" rel="stylesheet"> {% endcomment %}
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/social-icons.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    </head>
+
+    <body>
+        <header id="header">
+            <!-- Section title -->
+            <h1 class="sr-only">Redjp | Portfolio</h1>
+
+            <nav id="main-navigation" class="navbar navbar-default navbar-fixed-top">
+                <!-- Section title -->
+                <h1 class="sr-only">Main navigation</h1>
+
+                <div class="title-content">
+
+                    <h2 class="section-title"><a href="{% url 'post_list' %}">Portfolio</a></h2>
+
+                </div>
+
+            </nav>
+
+        </header>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="{% static 'js/smooth-scroll.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/modernizr.mq.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/mixitup.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/slick.min.js' %}"></script>
+
+	<!-- Latest compiled and minified JavaScript Bootstrap-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Custom JS -->
+	<script src="{% static 'js/custom.js' %}"></script>
+</html>
