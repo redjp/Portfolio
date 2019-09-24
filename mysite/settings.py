@@ -117,7 +117,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'image')
 MEDIA_URL = '/image/'
 
@@ -131,7 +131,6 @@ except ImportError:
 
 if not DEBUG:
     SECRET_KEY = os.environ['SECRET_KEY']
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     import django_heroku
     django_heroku.settings(locals())
 
