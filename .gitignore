@@ -7,3 +7,5 @@ staticfiles
 .DS_Store
 local_settings.py
 .vscode
+.png
+.gif
