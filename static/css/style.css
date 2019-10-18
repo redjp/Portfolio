@@ -40,6 +40,9 @@ h2.section-title,
 
 .title-content {
 	text-align: center;
+	padding: 0;
+	bottom: 10%;
+	transform: translateY(10%);
 }
 
 .title-content p {
@@ -222,7 +225,8 @@ NAVIGATION
 }
 
 #main-navigation.navbar-default {
-	background-color: #ffffff;
+	background: url(../img/services_background.png) center center no-repeat;
+	background-size: cover;
 }
 
 #main-navigation .navbar-brand,
@@ -264,7 +268,7 @@ NAVIGATION
 #main-navigation.navbar-default .title-content>.section-title>a,
 #main-navigation.navbar-default .title-content>.section-title>a:focus,
 #main-navigation.navbar-default .title-content>.section-title>a:hover {
-	color: #334752;
+	color: #ffffff;
 	background-color: transparent;
 	text-decoration: none;
 }
@@ -337,152 +341,6 @@ NAVIGATION
 	-webkit-transform: rotate(0);
 	-ms-transform: rotate(0);
 	transform: rotate(0);
-}
-
-/**********************
-HOME SECTION
-***********************/
-
-#home {
-	height: 950px;
-}
-
-.carousel {
-	width: 100%;
-	height: 100%;
-}
-
-.carousel .item {
-	height: 950px;
-	background: url("../img/slider_background.png") center center no-repeat;
-	background-size: cover;
-}
-
-.carousel-caption {
-	padding: 0;
-	bottom: 50%;
-	transform: translateY(50%);
-}
-
-.carousel-caption .btn-default {
-	margin-top: 31px;
-}
-
-.carousel-caption .h1 {
-	margin-top: 27px;
-}
-
-.carousel-caption p {
-	margin-top: 36px;
-}
-
-.carousel-indicators li {
-	margin: 1px 8px;
-	border-color: #ffffff;
-	background-color: #ffffff;
-}
-
-.carousel-indicators .active {
-	margin: 0 8px;
-	border-radius: 8px;
-	border-color: #ffe600;
-	background-color: #ffe600;
-}
-
-.carousel-control {
-	opacity: 0;
-}
-
-.carousel-control span {
-	color: #ffe600;
-}
-
-/**********************
-SERVICES SECTION
-***********************/
-
-#services {
-	padding: 91px 0 0;
-}
-
-.services-container {
-	position: relative;
-	margin-top: 89px;
-	padding: 0 0 56px;
-}
-
-.services-container .line {
-	position: absolute;
-	top: 56px;
-	width: 80%;
-	left: 10%;
-	border-top: 2px solid #ffe600;
-}
-
-.services-container .service {
-	max-width: 270px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.services-container .service h4 {
-	margin-top: 53px;
-	text-transform: uppercase;
-	font-weight: 600;
-}
-
-.services-container .service p {
-	margin-top: 28px;
-}
-
-.we-make-section {
-	background: url(../img/services_background.png) center center no-repeat;
-	background-size: cover;
-	position: relative;
-	padding: 78px 0 0;
-}
-
-.we-make-section .img-container {
-	margin-bottom: -48px;
-}
-
-.we-make-section h3 {
-	color: #ffe600;;
-	margin-top: 15px;
-}
-
-.we-make-section p {
-	margin-top: 37px;
-	color: #ffffff;
-}
-
-.we-make-section .features-list {
-	margin: 44px 0 0 28px;
-	color: #ffffff;
-	text-transform: uppercase;
-}
-
-.we-make-section .features-list li {
-	position: relative;
-	line-height: 30px;
-	margin-left: 60px;
-	margin-bottom: 10px;
-}
-
-.we-make-section .features-list li:before {
-	content: '';
-	display: block;
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	left: -60px;
-	background: url('../img/svg/circle_plus.svg') center center no-repeat;
-}
-
-.services-cta-container {
-	padding: 35px 0;
-	text-align: center;
-	background: #ffe500;
 }
 
 /**********************
@@ -589,6 +447,7 @@ PORTFOLIO SECTION
 
 .video-section .video-description {
 	margin-top: 31px;
+	margin-right: 22px;
 	max-width: 100%;
 }
 
@@ -627,234 +486,6 @@ PORTFOLIO SECTION
 .business-section .img-container {
 	margin-top: 51px;
 	margin-bottom: -47px;
-}
-
-/**********************
-ABOUT US SECTION
-***********************/
-
-#about {
-	padding: 86px 0 0;
-}
-
-.about-team {
-	margin-top: 55px;
-}
-
-.about-team .team-member:focus {
-	outline: none;
-}
-
-.about-team .team-member .img-container img {
-	display: inline-block;
-}
-
-.about-team .team-member .description {
-	max-width: 100%;
-}
-
-.about-team .team-member h4,
-.about-team .team-member .h4 {
-	margin-top: 64px;
-	font-size: 25px;
-	font-weight: 600;
-	color: #ffe600;
-}
-
-.about-team .team-member .position {
-	margin-top: 18px;
-	font-weight: 600;
-	color: #334752;
-	text-transform: uppercase;
-}
-
-.about-team .team-member .biography {
-	margin-top: 38px;
-}
-
-.about-team .team-member .biography p:not(:first-of-type) {
-	margin-top: 15px;
-}
-
-/**********************
-SLIDER OPTIONS
-***********************/
-
-.team-member.slick-slide {
-	opacity: 0.2;
-	transition: opacity 1s ease-out;
-}
-
-.team-member.slick-slide.slick-center {
-	opacity: 1;
-	transition: opacity 1s ease-out;
-}
-
-/**********************
-SKILLS & COMPANY SUBSECTION
-***********************/
-
-.skills-company-subsection {
-	padding: 90px 0;
-	background: #324651;
-	color: #ffffff;
-}
-
-.skills-company-subsection h4 {
-	color: #ffe600;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.skills-subsection {
-	margin-top: 20px;
-}
-
-.skills-subsection p {
-	margin-top: 20px;
-	text-transform: uppercase;
-	font-weight: 300;
-}
-
-.skills-subsection .progress {
-	margin-top: 15px;
-	height: 15px;
-	border-radius: 10px;
-	background-color: #ffffff;
-}
-
-.skills-subsection .progress-bar {
-	line-height: 15px;
-	border-radius: 10px;
-	background-color: #ffe600;
-}
-
-.company-subsection .description {
-	margin-top: 65px;
-}
-
-.company-subsection .description p:not(:first-of-type) {
-	margin-top: 15px;
-}
-
-/**********************
-BLOG SECTION
-***********************/
-
-#blog {
-	padding: 93px 0 0;
-	background: #fafafa;
-}
-
-.first-row-entry {
-	margin-top: 93px;
-}
-
-.second-row-entry {
-	margin-top: 32px;
-}
-
-.blog-entry {
-	background: #ffffff;
-	border-bottom: 2px solid #c2cfd7;
-}
-
-.blog-entry-inner {
-	padding: 24px 21px 17px;
-	overflow: hidden;
-}
-
-.blog-entry img {
-	width: 100%;
-}
-
-.blog-entry a {
-	text-decoration: none;
-	color: #ffe600;
-}
-
-.blog-entry a:hover,
-.blog-entry a:focus,
-.blog-entry a:active {
-	color: #637988;
-}
-
-.blog-entry .author-date {
-	margin-top: 11px;
-	font-size: 11px;
-}
-
-.blog-entry .entry-content {
-	margin-top: 25px;
-}
-
-.blog-entry .read-more {
-	display: block;
-	margin-top: 20px;
-	text-transform: uppercase;
-	font-weight: 600;
-}
-
-#articles .btn {
-	display: block;
-	margin: 55px auto 0;
-}
-
-#blog .newsletter {
-	margin-top: 95px;
-	padding: 53px 0;
-	background: #ffe600;
-	color: #ffffff;
-}
-
-#blog .newsletter h3,
-#blog .newsletter .h3 {
-	font-size: 30px;
-	text-align: center;
-}
-
-#blog .newsletter-form {
-	margin-top: 38px;
-	text-align: center;
-}
-
-#blog .newsletter-form #Email {
-	display: block;
-	width: 100%;
-	padding: 9px 22px;
-	border: 1px solid #ffffff;
-	border-radius: 20px;
-	color: #637988;
-	font-weight: 300;
-	outline: none;
-	transition: border 0.3s ease-out;
-}
-
-#blog .newsletter-form #Email:focus,
-#blog .newsletter-form #Email:active {
-	outline: none;
-	border: 1px solid #637988;
-}
-
-#blog .newsletter-form #Email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-style: italic;
-}
-#blog .newsletter-form #Email::-moz-placeholder { /* Firefox 19+ */
-  font-style: italic;
-}
-#blog .newsletter-form #Email:-ms-input-placeholder { /* IE 10+ */
-  font-style: italic;
-}
-#blog .newsletter-form #Email:-moz-placeholder { /* Firefox 18- */
-  font-style: italic;
-}
-
-#blog .newsletter-form .btn {
-	display: block;
-	width: 100%;
-    max-width: 170px;
-    font-size: 13px;
-    padding: 10px 0;
 }
 
 /**********************
@@ -940,16 +571,33 @@ FOOTER SECTION
 	text-align: center;
 }
 
-#footer .tel {
-	margin-top: 26px;
-}
-
-#footer .social-list {
+#footer .profile-list{
 	margin-top: 38px;
 }
 
-#footer .social-list li {
-	margin-right: 21px;
+#footer .profile-list li{
+	display: inline-block;
+	margin-right: 17px;
+}
+
+#footer .profile-list a {
+	position: relative;
+	display: flex;
+	width: 120px;
+	height: 30px;
+	color: #324651;
+	background: #fafafa;
+	border: 1px solid #ffffff;
+	box-sizing: border-box;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease-out;
+}
+
+#footer .profile-list a:hover {
+	color: #ffffff;
+	background: #ffe600;
 }
 
 #footer .copyright {
@@ -990,18 +638,6 @@ HELPER CLASSES
 RESPONSIVE
 ***********************/
 
-@media only screen and (min-width: 1440px) {
-
-	/**********************
-	HOME SECTION
-	***********************/
-	.carousel-caption {
-		left: 25%;
-		right: 25%;
-	}
-
-}
-
 @media only screen and (max-width: 1199px) {
 
 	/**********************
@@ -1029,36 +665,6 @@ RESPONSIVE
 @media only screen and (max-width: 991px) {
 
 	/**********************
-	SERVICES SECTION
-	***********************/
-
-	.services-container .service {
-		margin-top: 45px;
-	}
-
-	.services-container .line {
-		display: none;
-	}
-
-	.features-container {
-		max-width: 650px;
-		margin: 0 auto;
-		padding: 0 15px;
-		text-align: center;
-	}
-
-	.we-make-section .img-container {
-		margin-bottom: 0;
-		margin: 60px auto;
-	}
-
-	.we-make-section .features-list {
-		display: inline-block;
-		margin: 44px auto 0;
-		text-align: left;
-	}
-
-	/**********************
 	PORTFOLIO SECTION
 	***********************/
 	.video-section h4 {
@@ -1068,34 +674,6 @@ RESPONSIVE
 	#portfolio .video-section .btn {
 		display: block;
 		margin: 30px auto 0;
-	}
-
-	/**********************
-	ABOUT US SECTION
-	***********************/
-	.about-team .team-member .description {
-		text-align: center;
-		margin-bottom: 45px;
-	}
-
-	.about-team .team-member h4,
-	.about-team .team-member .h4 {
-		margin-top: 35px;
-	}
-
-	.about-team .team-member .description .biography {
-		text-align: left;
-	}
-
-	/**********************
-	SKILLS & COMPANY SUBSECTION
-	***********************/
-	.company-subsection h4 {
-		margin-top: 90px;
-	}
-
-	.company-subsection .description {
-		margin-top: 30px;
 	}
 
 	/**********************

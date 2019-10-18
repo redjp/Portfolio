@@ -21,13 +21,17 @@
     </head>
 
     <body>
+        <!-- Header -->
         <header id="header">
             <!-- Section title -->
             <h1 class="sr-only">Redjp | Portfolio</h1>
 
             <nav id="main-navigation" class="navbar navbar-default navbar-fixed-top">
+
                 <!-- Section title -->
                 <h1 class="sr-only">Main navigation</h1>
+
+                <div class="overlay"></div>
 
                 <div class="title-content">
 
@@ -38,14 +42,48 @@
             </nav>
 
         </header>
+
+        <!-- Main content -->
         <div class="content container">
+
             <div class="row">
+                <!-- Bootstrap -->
                 <div class="col-md-8">
                 {% block content %}
                 {% endblock %}
                 </div>
+
             </div>
+
         </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6 col-md-offset-3">
+
+                        <p class="mail">nya_um@yahoo.co.jp</p>
+
+                        <ul class="profile-list">
+                            <li><a href="https://github.com/redjp" target="_blank">GitHub</a></li>
+                            <li><a href="https://atcoder.jp/users/REDjp" target="_blank">AtCoder</a></li>
+                            <li><a href="https://www.codingame.com/profile/a4190834d752220a3cbcf277c659f9980729833" target="_blank">CodinGame</a></li>
+                        </ul>
+
+                        <p class="copyright"> © Copyright <span id="year">2019</span> <span class="text-yellow">Redjp</span>. All Rights Reserved</p>
+
+                    </div>
+
+                </div> <!-- /.row -->
+
+            </div> <!-- /.container -->
+
+        </footer>
+
     </body>
 
     <!-- Scripts -->
